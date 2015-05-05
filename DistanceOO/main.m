@@ -43,6 +43,19 @@ int main(int argc, const char * argv[]) {
         if ([newPoint distance: newPoint2]-4.24>0.05){
             NSLog(@"Incorrect");
         }
+        newPoint = [newPoint init: 0 y:0];
+        newPoint2 = [newPoint2 init: 10 y:10];
+        
+        if ([newPoint distance: newPoint2]-14.14>0.05){
+            NSLog(@"Incorrect");
+        }
+        newPoint = [newPoint init: 0 y:0];
+        newPoint2 = [newPoint2 init: 15 y:15];
+        
+        if ([newPoint distance: newPoint2]-21.21>0.05){
+            NSLog(@"Incorrect");
+        }
+
         
     }
     return 0;
