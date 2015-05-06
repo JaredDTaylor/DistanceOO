@@ -54,6 +54,11 @@ int main(int argc, const char * argv[]) {
         if ([newPoint distance: newPoint2]-29.15>ERROR_THRESHOLD){
             NSLog(@"Incorrect");
         }
+        newPoint = [newPoint init: 3 y:7];
+        newPoint2 = [newPoint2 init: 41 y:52];
+        if ([newPoint distance: newPoint2]-58.90>ERROR_THRESHOLD){
+            NSLog(@"Incorrect");
+        }
 
         
     }
